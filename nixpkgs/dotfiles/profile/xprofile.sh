@@ -1,0 +1,2 @@
+# Startup commands
+nitrogen --restore &
