@@ -1,0 +1,19 @@
+#+title: My Cool NixOS Configuration
+
+[[https://upload.wikimedia.org/wikipedia/commons/2/28/Nix_snowflake.svg]]
+
+* Basic tools:
+
+- Doom Emacs
+- DWM
+- Alacritty
+- Rofi
+
+* Setup steps
+
+1. Copy =configuration.nix= to =/etc/nixos/configuration.nix=
+2. Install *Home Manager*
+3. Move =nixpkgs= to =~/.config/nixpkgs=
+4. Setup all =nixos=, =nixpkgs=, =nixos-unstable= and =nixpkgs-unstable= channels
+5. Run =sudo nixos-rebuild switch= and =home-manager switch=
+6. Clone =doom-emacs= to =~/.emacs.d= and run =~/.doom.d/bin/doom install=
