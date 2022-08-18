@@ -14,6 +14,10 @@
 1. Copy =configuration.nix= to =/etc/nixos/configuration.nix=
 2. Install *Home Manager*
 3. Move =nixpkgs= to =~/.config/nixpkgs=
-4. Setup all =nixos=, =nixpkgs=, =nixos-unstable= and =nixpkgs-unstable= channels
+5. Channel setup:
+  a) NixOS Channel: =sudo nix-channel --add https://channels.nixos.org/nixos-unstable/ nixos=
+  b) HM Channel: =nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager=
+  c) NixPkgs Unstable Channel: =nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs-unstable=
+  d) Update them! =sudo nix-channel --update= and =nix-channel --update=
 5. Run =sudo nixos-rebuild switch= and =home-manager switch=
 6. Clone =doom-emacs= to =~/.emacs.d= and run =~/.doom.d/bin/doom install=
