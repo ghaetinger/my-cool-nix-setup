@@ -29,11 +29,11 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class               instance    title       tags mask     isfloating   monitor, floatx floaty floatw floath */
-	{ "Gimp",              NULL,       NULL,       0,            1,           -1,        0,     0,     0,     0},
-	{ "Firefox",           NULL,       NULL,       1 << 8,       0,           -1,        0,     0,     0,     0},
-	{ "eww",               NULL,       NULL,       0,            1,           -1,        0,     0,     0,     0},
-	{ ".guvcview-wrapped", NULL,       NULL,       (1 << 8) - 1,            1,           -1,       3840 - 960 - 10,  2160 - 540 - 10,   960,    540},
+	/* class               instance    title       tags mask     isfloating   monitor, floatx             floaty       floatw floath */
+	{ "Gimp",              NULL,       NULL,       0,            1,           -1,        0,                 0,           0,     0},
+	{ "Firefox",           NULL,       NULL,       1 << 8,       0,           -1,        0,                 0,           0,     0},
+	{ "eww",               NULL,       NULL,       0,            1,           -1,        0,                 0,           0,     0},
+	{ ".guvcview-wrapped", NULL,       NULL,       (1 << 8) - 1, 1,           -1,  3840 - 960 - 10,  2160 - 540 - 10,   960,    540},
 };
 
 /* layout(s) */

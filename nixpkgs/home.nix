@@ -4,7 +4,7 @@ let
   unstable = import <nixpkgs-unstable> { config = { allowUnfree = true; }; };
   packages = import ./packages { lib=lib; stable=pkgs; unstable=unstable; };
   services = import ./services { lib=lib; };
-  dotfiles = import ./dotfiles;
+  dotfiles = import ./dotfiles { stable=pkgs; };
 in {
 
   programs.home-manager.enable = true;

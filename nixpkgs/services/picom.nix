@@ -24,7 +24,7 @@
             "class_g ~= 'Peek'"
             "class_g ~= 'peek'"
         ];
-        corner-radius = 12;
+        corner-radius = 7;
         round-borders = 1;
         rounded-corners-exclude = [
             "class_g = 'dwm'"
@@ -42,11 +42,20 @@
     package = pkgs.picom.overrideAttrs(o: {
       src = pkgs.fetchFromGitHub {
         repo = "picom";
-        owner = "jonaburg";
-        rev = "e3c19cd7d1108d114552267f302548c113278d45";
-        sha256 = "19nglw72mxbr47h1nva9fabzjv51s4fy6s1j893k4zvlhw0h5yp2";
+        owner = "FT-Labs";
+        rev = "795651dd74b268ea8578272ab4adc3a23a16ee80";
+        sha256 = "0hkmypfvy8cc8ff05a12hzycylzdrl39j5kyir29srqbcmkc7m16";
       };
     });
+
+    # package = pkgs.picom.overrideAttrs(o: {
+    #   src = pkgs.fetchFromGitHub {
+    #     repo = "picom";
+    #     owner = "jonaburg";
+    #     rev = "e3c19cd7d1108d114552267f302548c113278d45";
+    #     sha256 = "19nglw72mxbr47h1nva9fabzjv51s4fy6s1j893k4zvlhw0h5yp2";
+    #   };
+    # });
 
     # package = pkgs.picom.overrideAttrs(o: {
     #   src = pkgs.fetchFromGitHub {

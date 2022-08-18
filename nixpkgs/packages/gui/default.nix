@@ -1,5 +1,6 @@
 { stable, unstable }: let
   dwm_patched = stable.callPackage ./dwm { };
+  dwmblocks_patched = stable.callPackage ./dwmblocks { };
 in with stable; [
     alacritty
     emacs
@@ -20,4 +21,5 @@ in with stable; [
 
     # Patches
     dwm_patched
+    dwmblocks_patched
 ]
