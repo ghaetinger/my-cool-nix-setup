@@ -18,23 +18,23 @@
     backend = "glx";
     experimentalBackends = true;
 
-    settings = {
-        animations = true;
-        blur-background-exclude = [
-            "class_g ~= 'Peek'"
-            "class_g ~= 'peek'"
-        ];
-        corner-radius = 7;
-        round-borders = 1;
-        rounded-corners-exclude = [
-            "class_g = 'dwm'"
-        ];
-        blur = {
-            method = "dual_kawase";
-            strength = 8;
-        };
-        xinerama-shadow-crop = true;
-    };
+     settings = {
+         animations = true;
+         blur-background-exclude = [
+             "class_g ~= 'Peek'"
+             "class_g ~= 'peek'"
+         ];
+         corner-radius = 7;
+         round-borders = 1;
+         rounded-corners-exclude = [
+             "class_g = 'dwm'"
+         ];
+         blur = {
+             method = "dual_kawase";
+             strength = 8;
+         };
+         xinerama-shadow-crop = true;
+     };
     fade = true;
     fadeDelta = 5;
     vSync = true;
